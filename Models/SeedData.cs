@@ -27,7 +27,7 @@ namespace GurmanLamps.Models
                     {
                         Type = "baby blower",
                         ManufacturingDate = DateTime.Parse("2023-08-31"),
-                        MaterialUsed = "bulb, cord, metal",
+                        MaterialUsed = "plug, electrical cord, bulbs and socket kit and battery",
                         Price = 20.55M,
                         LampColor = "white",
                         BulbColor="white"
