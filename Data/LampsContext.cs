@@ -3,9 +3,9 @@ using GurmanLamps.Models;
 
 namespace GurmanLamps.Data
 {
-    public class LampsContext : DbContext
+    public class GurmanLampsContext : DbContext
     {
-        public LampsContext(DbContextOptions<LampsContext> options)
+        public GurmanLampsContext(DbContextOptions<GurmanLampsContext> options)
             : base(options)
         {
         }

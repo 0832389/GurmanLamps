@@ -14,7 +14,7 @@ Changed the he element to My Lamps List.
 Now,i edited the home/index.cshtml page to change the browser title, primary heading and secondary headings.
 Then, i passed ViewData dictionary object that contains data to the view.
 After that, i created a new item in HelloWorld folder which i named "Welcome.cshtml" to create a loop in that item.
-Added a new class in the Models folder which is named as GurmanLamp.cs and then, added a Primary key "Id" and properties like type, Price, Manufacturing Time and Material used and LampColor.
+Added a new class in the Models folder which is named as GurmanLamp.cs and then, added a Primary key "Id" and properties like type, Price, Manufacturing Time Material used, BulbColor and LampColor.
 
 2023/10/11 at 11:30 am
 Added NuGet Package.

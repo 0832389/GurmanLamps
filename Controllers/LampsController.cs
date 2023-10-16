@@ -12,9 +12,9 @@ namespace GurmanLamps.Controllers
 {
     public class LampsController : Controller
     {
-        private readonly LampsContext _context;
+        private readonly GurmanLampsContext _context;
 
-        public LampsController(LampsContext context)
+        public LampsController(GurmanLampsContext context)
         {
             _context = context;
         }
@@ -73,7 +73,7 @@ namespace GurmanLamps.Controllers
                 return NotFound();
             }
 
-            var lamps = await _context.Lamps.FindAsync(id);
+            var lamps = await _context.GurmanLamps.FindAsync(id);
             if (lamps == null)
             {
                 return NotFound();
@@ -124,7 +124,7 @@ namespace GurmanLamps.Controllers
                 return NotFound();
             }
 
-            var lamps = await _context.Lamps
+            var lamps = await _context.GurmanLamps
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (lamps == null)
             {
@@ -139,15 +139,15 @@ namespace GurmanLamps.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var lamps = await _context.Lamps.FindAsync(id);
-            _context.Lamps.Remove(lamps);
+            var lamps = await _context.GurmanLamps.FindAsync(id);
+            _context.GurmanLamps.Remove(lamps);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool LampsExists(int id)
         {
-            return _context.Lamps.Any(e => e.Id == id);
+            return _context.GurmanLamps.Any(e => e.Id == id);
         }
     }
 }
