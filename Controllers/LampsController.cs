@@ -26,18 +26,23 @@ namespace GurmanLamps.Controllers
         }
 
         // GET: Lamps/Details/5
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Details(int? id)
         {
-            var movies = from m in _context.GurmanLamps
-                         select m;
-
-            if (!String.IsNullOrEmpty(searchString))
+            if (id == null)
             {
-                lamps = Lamps.Where(s => s.Type.Contains(searchString));
+                return NotFound();
             }
 
-            return View(await Lamps.ToListAsync());
+            var lamps = await _context.GurmanLamps
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (lamps == null)
+            {
+                return NotFound();
+            }
+
+            return View(lamps);
         }
+
         // GET: Lamps/Create
         public IActionResult Create()
         {
