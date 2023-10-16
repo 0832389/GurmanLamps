@@ -27,7 +27,7 @@ namespace GurmanLamps
         {
             services.AddControllersWithViews();
             services.AddDbContext<GurmanLampsContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("GurmanLampsContext")));
+            options.UseSqlServer(Configuration.GetConnectionString("LampsContext")));
 
            
         

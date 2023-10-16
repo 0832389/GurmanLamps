@@ -81,6 +81,42 @@ namespace GurmanLamps.Models
                              Price = 8.99M,
                              LampColor = "Black",
                              BulbColor = "white"
+                         },
+                         new Lamps
+                         {
+                             Type = "flickering",
+                             ManufacturingDate = DateTime.Parse("2021-04-23"),
+                             MaterialUsed = "bulb, cord, metal",
+                             Price = 8.99M,
+                             LampColor = "Black",
+                             BulbColor = "white"
+                         },
+                         new Lamps
+                         {
+                             Type = "flickering",
+                             ManufacturingDate = DateTime.Parse("2021-04-23"),
+                             MaterialUsed = "bulb, cord, metal",
+                             Price = 8.99M,
+                             LampColor = "Black",
+                             BulbColor = "white"
+                         },
+                         new Lamps
+                         {
+                             Type = "flickering",
+                             ManufacturingDate = DateTime.Parse("2021-04-23"),
+                             MaterialUsed = "bulb, cord, metal",
+                             Price = 8.99M,
+                             LampColor = "Black",
+                             BulbColor = "white"
+                         },
+                         new Lamps
+                         {
+                             Type = "flickering",
+                             ManufacturingDate = DateTime.Parse("2021-04-23"),
+                             MaterialUsed = "bulb, cord, metal",
+                             Price = 8.99M,
+                             LampColor = "Black",
+                             BulbColor = "white"
                          }
 
 
