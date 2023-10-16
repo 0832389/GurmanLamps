@@ -12,9 +12,9 @@ namespace GurmanLamps.Controllers
 {
     public class LampsController : Controller
     {
-        private readonly GurmanLampsContext _context;
+        private readonly LampsContext _context;
 
-        public LampsController(GurmanLampsContext context)
+        public LampsController(LampsContext context)
         {
             _context = context;
         }
@@ -22,7 +22,7 @@ namespace GurmanLamps.Controllers
         // GET: Lamps
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Lamps.ToListAsync());
+            return View(await _context.GurmanLamps.ToListAsync());
         }
 
         // GET: Lamps/Details/5
@@ -33,7 +33,7 @@ namespace GurmanLamps.Controllers
                 return NotFound();
             }
 
-            var lamps = await _context.Lamps
+            var lamps = await _context.GurmanLamps
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (lamps == null)
             {
