@@ -26,10 +26,10 @@ namespace GurmanLamps
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<LampsContext>(options =>
+            services.AddDbContext<GurmanLampsContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("LampsContext")));
 
-            services.AddDbContext<LampsContext>(options =>
+            services.AddDbContext<GurmanLampsContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("LampsContext")));
         
     }

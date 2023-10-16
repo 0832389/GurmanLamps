@@ -25,7 +25,7 @@ Then, i went through the code of file "Startup.ConfigureServices" and did change
 Then i examined database connection string.
 To do so, opened the appsettings.json file and build the project to check for compiler errors.
 After cleaning and rebuilding the solution, i did scaffolding.
-Then, i tried to add migration but failed to do so.
+Then, i tried to add migration and it was successful attempt.
 Now, i started to add image and designing the app.
 
 
