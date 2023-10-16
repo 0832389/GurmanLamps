@@ -18,13 +18,15 @@ Added a new class in the Models folder which is named as BrightLamp.cs and then,
 
 2023/10/11 at 11:30 am
 Added NuGet Package.
-Then, created Data folder and added a file in it "BrightLampContext.cs" to create a DbSet<BrightLamp> property for entity set.
+Then, created Data folder and added a file in it "GurmanLampContext.cs" to create a DbSet<GurmanLamp> property for entity set.
 After completing that, added statements at the top of the startup.cs file : "using GurmanLampContext.Data;
 using Microsoft.EntityFrameworkCore;".
 Then, i went through the code of file "Startup.ConfigureServices" and did changes in the code.The name of the connection string is passed in to the context by calling a method on a DbContextOptions object.
 Then i examined database connection string.
 To do so, opened the appsettings.json file and build the project to check for compiler errors.
 After cleaning and rebuilding the solution, i did scaffolding.
+Then, i tried to add migration but failed to do so.
+Now, i started to add image and designing the app.
 
 
 
