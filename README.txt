@@ -27,6 +27,7 @@ To do so, opened the appsettings.json file and build the project to check for co
 After cleaning and rebuilding the solution, i did scaffolding.
 Then, i tried to add migration and it was successful attempt.
 Now, i started to add image and designing the app.
+Added about.cshtml file.
 
 
 
