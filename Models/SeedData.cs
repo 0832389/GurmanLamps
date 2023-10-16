@@ -14,7 +14,7 @@ namespace GurmanLamps.Models
                 serviceProvider.GetRequiredService<
                     DbContextOptions<GurmanLampsContext>>()))
             {
-                // Look for any movies.
+                // Look for any Lamps.
                 if (context.GurmanLamps.Any())
                 {
                     return;   // DB has been seeded
