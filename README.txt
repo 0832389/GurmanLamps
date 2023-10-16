@@ -28,6 +28,7 @@ After cleaning and rebuilding the solution, i did scaffolding.
 Then, i tried to add migration and it was successful attempt.
 Now, i started to add image and designing the app.
 Added about.cshtml file.
+I seeded data.
 
 
 
